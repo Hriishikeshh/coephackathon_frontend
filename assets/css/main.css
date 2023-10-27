@@ -665,6 +665,7 @@ table.alt tbody tr td {
 .highlights {
   width: 100%;
   margin: 2.5rem 0;
+  padding-left: 300px;
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
