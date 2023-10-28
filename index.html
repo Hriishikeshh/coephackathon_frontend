@@ -14,36 +14,60 @@
 				<video autoplay loop muted playsinline src="images/banner3.mp4"></video></section><!-- Highlights --><section class="wrapper"><div class="inner">
 					</header><div class="highlights">
 						<section><div class="content">
-								<header><div class="icon fa-vcard-o"><span class="label">Icon</span></div>
-									<div class="dropdown">
+								<header><div class="icon fa-vcard-o"><span class="label">Icon</span></div></header>
+									<div class="dropdown"><select id="dropdown1">
 										<button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-										  Installation Type
+										<option value="">Installation Type</option> 
 										</button>
-										<ul class="dropdown-menu">
-										  <li><a class="dropdown-item">Residential</a></li>
-										  <li><a class="dropdown-item">Industrial</a></li>
-										  <li><a class="dropdown-item">Commercial</a></li>
-										</ul>
-									  </div>
+											<ul class="dropdown-menu">
+											<li><a class="dropdown-item"><option value="residential">Residential</option></a></li>
+											<li><a class="dropdown-item"><option value="industrial">Industrial</option></a></li>
+											<li><a class="dropdown-item"><option value="commercial">Commercial</option></a></li>
+											</ul>
+										</select>
+									</div>
 							</div>
 						</section><section><div class="content">
 								<header><div class="icon fa-floppy-o"><span class="label">Icon</span></div>
-									<div class="dropdown">
+									<div class="dropdown"><select id="dropdown2">
 										<button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-										  Cost
+										<option value="">cost</option> 
 										</button>
-										<ul class="dropdown-menu">
-										  <li><a class="dropdown-item">less than 1,25,000 Rs</a></li>
-										  <li><a class="dropdown-item">Greater than 2,80,000 Rs</a></li>
-										</ul>
+											<ul class="dropdown-menu">
+												<li><a class="dropdown-item"><option value="lessthan">less than 1,25,000 RS</option></a></li>
+												<li><a class="dropdown-item"><option value="greaterthan">Greater than 2,80,000 Rs</option></a></li>
+											</ul>
+										</select>
 									</div>	
 							</div>
-						</section><section>
-				</div>
+						</section><section><div class="content">
+							<header><div class="icon fa-floppy-o"><span class="label">Icon</span></div>
+								<div class="dropdown"><select id="dropdown3">
+									<button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<option value="">state</option>
+									</button>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item"><option value="maharashtra">maharashtra</option></a></li>
+											<li><a class="dropdown-item"><option value="tamilnadu">Tamil Nadu</option></a></li>
+											<li><a class="dropdown-item"><option value="telangana">Telangana</option></a></li>
+											<li><a class="dropdown-item"><option value="Karnataka">karnataka</option></a></li>
+											<li><a class="dropdown-item"><option value="westbengal">West Bengal</option></a></li>
+											<li><a class="dropdown-item"><option value="rajasthan">rajasthan</option></a></li>
+											<li><a class="dropdown-item"><option value="up">Uttar Pradesh</option></a></li>
+											<li><a class="dropdown-item"><option value="kerala">kerala</option></a></li>
+											<li><a class="dropdown-item"><option value="delhi">Delhi</option></a></li>
+										</ul>
+									</select>
+								</div>	
+						</div>
+					</section>
+					</div>
+				<div id="dataDisplay" class="highlights"></div>
 			<!-- Testimonials --><section class="wrapper"><div class="inner">
 					<header class="special"><h2>Faucibus consequat lorem</h2>
 						<p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.</p>
-					</header>
+					</header></div></section></div>
 		<!-- Scripts -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-			<script src="assets/js/jquery.min.js"></script><script src="assets/js/browser.min.js"></script><script src="assets/js/breakpoints.min.js"></script><script src="assets/js/util.js"></script><script src="assets/js/main.js"></script></body></html>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+			<script src="assets/js/jquery.min.js"></script><script src="assets/js/browser.min.js"></script><script src="assets/js/breakpoints.min.js"></script><script src="assets/js/util.js"></script><script src="assets/js/main.js"></script>
+			<script src="scriptcoep.js"></script></body></html>
