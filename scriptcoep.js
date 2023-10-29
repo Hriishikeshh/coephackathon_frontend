@@ -3,12 +3,15 @@ const dropdown1 = document.getElementById("dropdown1");
 const dropdown2 = document.getElementById("dropdown2");
 const dropdown3 = document.getElementById("dropdown3");
 const dataDisplay = document.getElementById("dataDisplay");
+const unique_button = document.getElementById("unique-button")
 
-
+unique_button.addEventListener("click", function(){
+  getLLMresponse()
+})
 
 dropdown1.addEventListener('click', function() {
     getFilteredData()
-    getLLMresponse()
+    // getLLMresponse()
       });
 dropdown2.addEventListener('click', function() {
         getFilteredData()
@@ -80065,7 +80068,6 @@ const objects = [
 
 function getFilteredData(){
     const installationType = dropdown1.value;
-    console.log(installationType)
     const budget = dropdown2.value;
     const state = dropdown3.value;
    
@@ -80101,11 +80103,18 @@ function getFilteredData(){
     }
 
 function getLLMresponse(){
-  fetch("http://127.0.0.1:5000/store")
+  const installationType = dropdown1.value;
+    const budget = dropdown2.value;
+    const state = dropdown3.value;
+  fetch(`http://127.0.0.1:5000/store/${installationType}/${budget}/${state}`)
+        
         .then(response => response.json())  // Parse the JSON-formatted response
         .then(data => {
             // Handle the data returned from the API
-            console.log(data);
+            let content = document.getElementById("bot-response");
+            let jsonObject = data.message
+            content.innerText = jsonObject
+            
         })
         .catch(error => {
             // Handle errors
